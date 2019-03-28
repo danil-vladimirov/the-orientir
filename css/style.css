@@ -154,6 +154,8 @@
       z-index: 222;
       transform: translateZ(50px);
       align-items: flex-end;
+      flex-wrap: wrap;
+      width: 100%;
     }
     .contacts-1 {
       flex: 3;
@@ -162,7 +164,6 @@
     .contacts-2 {
       flex: 2;
       z-index: 222;
-      padding-right: 20px;
     }
     .contacts-3 {
       flex: 7;
@@ -171,6 +172,8 @@
     .contacts-4 {
       flex: 1;
       z-index: 222;
+      margin-right: 20px;
+      text-align: right;
     }
     .link {
       font-family: Arial, sans-serif;
@@ -233,7 +236,13 @@
         }
         .contacts-3 {
           flex: 1;
+          padding-bottom: 13px;
           z-index: 222;
+        }
+        .contacts-4 {
+          flex: 1;
+          z-index: 222;
+          text-align: left;
         }
         .link {
           font-family: Arial, sans-serif;

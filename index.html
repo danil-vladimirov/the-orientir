@@ -25,6 +25,40 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
     <meta name="application-name" content="Orientir Moscow""/>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js"></script>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+  (function (d, w, c) {
+      (w[c] = w[c] || []).push(function() {
+          try {
+              w.yaCounter50304685 = new Ya.Metrika2({
+                  id:50304685,
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true,
+                  webvisor:true
+              });
+          } catch(e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+      if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+  })(document, window, "yandex_metrika_callbacks2");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/50304685" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
 </head>
 <body>
 
@@ -51,9 +85,9 @@
             <div class="about-3"></div>
         </div>
         <div class="contacts-container">
-            <div class="contacts-1">+7 905 538 5330 <a href="mailto:hello@orntr.com" class="link">hello@orntr.com</a></div>
-            <div class="contacts-2"><a href="https://www.facebook.com/orientirmoscow" target="_blank" class="link">facebook</a> <a href="https://www.instagram.com/orientirmoscow" target="_blank" class="link">instagram</a></div>
-            <div class="contacts-3">Now on Spotify<br> Новиков прибой — Волна (я люблю тебя)</div>
+            <div class="contacts-1">+7 905 538 5330<br> <a href="mailto:hello@orntr.com" class="link">hello@orntr.com</a></div>
+            <div class="contacts-2"><a href="https://www.facebook.com/orientirmoscow" target="_blank" class="link">Facebook</a><br><a href="https://www.instagram.com/orientirmoscow" target="_blank" class="link">Instagram</a></div>
+            <div class="contacts-3">Now on Spotify<br><div id="track">Fetching... </div></div>
             <div class="contacts-4"><a href="https://live.orntr.com/" target="_blank" class="link">Blog</a></div>
         </div>
 
@@ -96,6 +130,7 @@
   <script type="text/javascript" src="js/gyronorm.complete.min.js"></script>
   <script type="text/javascript" src="js/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/script-track-fetch.js"></script>
 
 </body>
 </html>
